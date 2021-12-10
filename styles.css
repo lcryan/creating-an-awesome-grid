@@ -1,1 +1,80 @@
-/*Maak hier jouw CSS!*/
+/*DIT IS DE MOBIELE GRID*/
+.container {
+    background-color: lightgray;
+    display: grid;
+    grid-gap: 16px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+    "header"
+    "text-box"
+    "aside-1"
+    "aside-2"
+    "aside-3"
+    "."
+    "footer";
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    grid-area: header;
+    background-color: #f94144;
+}
+
+#aside-1 {
+    grid-area: aside-1;
+    background-color: #f3722c;
+}
+
+#text-box {
+    grid-area: text-box;
+    background-color: #f8961e;
+
+}
+
+#aside-2 {
+    grid-area: aside-2;
+    background-color: #f9c74f;
+
+}
+
+#aside-3 {
+    grid-area: aside-3;
+    background-color: #90be6d;
+
+}
+
+#aside-4 {
+    grid-area: aside-4;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #43aa8b;
+}
+
+@media screen and (min-width: 576px) {
+    /*DIT IS THE DESKTOP GRID*/
+    .container {
+        background-color: lightgray;
+        font-family: Tahoma, "Times New Roman", sans-serif;
+        display: grid;
+        grid-gap: 16px;
+        padding: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 175px 100px auto 50px;
+        grid-template-areas:
+    "header aside-1 aside-1"
+    "text-box aside-1 aside-1"
+    "text-box aside-2 aside-3"
+    "text-box aside-2 ."
+    "footer footer footer"
+    }
+}
