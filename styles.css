@@ -1,6 +1,6 @@
 /*DIT IS DE MOBIELE GRID*/
 .container {
-    background-color: lightgray;
+    background-color: #faebd7;
     display: grid;
     grid-gap: 16px;
     padding: 10px;
@@ -63,7 +63,7 @@
 @media screen and (min-width: 576px) {
     /*DIT IS THE DESKTOP GRID*/
     .container {
-        background-color: lightgray;
+        background-color: #faebd7;
         font-family: Tahoma, "Times New Roman", sans-serif;
         display: grid;
         grid-gap: 16px;
